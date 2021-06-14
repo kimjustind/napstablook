@@ -1,0 +1,73 @@
+<html>
+<!-- 
+	hi there... this is my website. it's really nothing special right now.....
+	i'll try to update it when i remember to.....
+	last updated 6/13/2021
+	
+	(weird website by very, idk why i made this)
+	(visit my website https://vyls.io)
+-->
+	<head>
+		<title>napstablook.com</title>
+		<meta charset="UTF-8" />
+		<meta name="description" content="napstablook22's website" />
+		<meta name="viewport" content="width=device-width, intial-scale=1.0" />
+		<meta name="keywords" content="napstablook, blooky, undertale, napper hog, spookybloobloo, napstablook22, undernet, ghost" />
+
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div id="napsta">
+			<div id="blook">
+				<a onclick="typewriter()">
+					<img src="image/Napstablook.gif" alt="napstablook">
+				</a>
+				<p id="talking"></p>
+			</div>
+			<div id="disks">
+				<div class="music-container" id="music-container">
+					<audio id="audio"></audio>
+					<div class="navigation">
+						<button id="play" class="action-btn action-btn-big">
+							<i class="fas fa-play"></i>
+						</button>
+					</div>
+					<div class="music-info">
+						<div class="name">
+							<h4 id="title"></h4>
+							<h5 id="author"> by Toby Fox</h5>
+						</div>
+						<div class="progress-container" id="progress-container">
+							<div id="progress" class="progress"></div>
+						</div>
+					</div>
+					<script src="scripts/music.js"></script>
+				</div>
+				<div class="songs">
+					<button id="disk0" onclick="loadSong(songs[0]); playSong()">
+						<img src="image/record.png" alt="Pathetic House">
+					</button>
+					<button id="disk1" onclick="loadSong(songs[1]); playSong()">
+						<img src="image/record.png" alt="Thundersnail">
+					</button>
+					<button id="disk2" onclick="loadSong(songs[2]); playSong()">
+						<img src="image/record.png" alt="Spooktune">
+					</button>
+					<button id="disk2" onclick="loadSong(songs[3]); playSong()">
+						<img src="image/record.png" alt="Spookwave)">
+					</button>
+					<button id="disk2" onclick="loadSong(songs[4]); playSong()">
+						<img src="image/record.png" alt="Ghouliday">
+					</button>
+					<button id="disk2" onclick="loadSong(songs[5]); playSong()">
+						<img src="image/record.png" alt="Spooktune (Sim Gretina Remix)">
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="scripts/typewriter.js"></script>
+	</body>
+</html>
